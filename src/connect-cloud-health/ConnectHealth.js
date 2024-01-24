@@ -15,13 +15,14 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PingCheck = exports.ShutdownCheck = exports.LivenessCheck = exports.ReadinessCheck = exports.StartupCheck = exports.HealthChecker = exports.ReadinessEndpoint = exports.LivenessEndpoint = exports.HealthEndpoint = void 0;
 const health_1 = require("@cloudnative/health");
-exports.HealthChecker = health_1.HealthChecker;
-exports.StartupCheck = health_1.StartupCheck;
-exports.ReadinessCheck = health_1.ReadinessCheck;
-exports.LivenessCheck = health_1.LivenessCheck;
-exports.ShutdownCheck = health_1.ShutdownCheck;
-exports.PingCheck = health_1.PingCheck;
+Object.defineProperty(exports, "HealthChecker", { enumerable: true, get: function () { return health_1.HealthChecker; } });
+Object.defineProperty(exports, "StartupCheck", { enumerable: true, get: function () { return health_1.StartupCheck; } });
+Object.defineProperty(exports, "ReadinessCheck", { enumerable: true, get: function () { return health_1.ReadinessCheck; } });
+Object.defineProperty(exports, "LivenessCheck", { enumerable: true, get: function () { return health_1.LivenessCheck; } });
+Object.defineProperty(exports, "ShutdownCheck", { enumerable: true, get: function () { return health_1.ShutdownCheck; } });
+Object.defineProperty(exports, "PingCheck", { enumerable: true, get: function () { return health_1.PingCheck; } });
 var StateCode;
 (function (StateCode) {
     StateCode[StateCode["OK"] = 200] = "OK";
